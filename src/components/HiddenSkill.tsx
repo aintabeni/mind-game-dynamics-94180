@@ -8,10 +8,10 @@ export const HiddenSkill = () => {
   });
 
   const paragraphs = [
-    "Most players obsess over their touch, speed, and shot power.\nBut the real gap isn't legs — it's vision.",
-    "The truth is, the best players in the world aren't always faster or stronger.\nThey simply see the game before anyone else.",
-    "They don't chase the ball — they control it.\nThey don't react — they already know.",
-    "That's what makes football look effortless for the elite.",
+    "Most players obsess over touch, speed, and shooting. That's fine.\nBut the gap isn't legs, it's vision.",
+    "Pros don't chase the game.\nThey read it, map it, and arrive early.",
+    "When you train your brain:\n• Your first touch is already a second touch in your head.\n• Pressure feels slower.\n• Options appear before the ball does.",
+    "That's the difference you feel when the best look effortless.",
   ];
 
   return (
