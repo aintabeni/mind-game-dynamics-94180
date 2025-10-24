@@ -18,13 +18,13 @@ export const FieldMapFramework = () => {
 
   const listItems = [
     "Build a real field map before receiving",
-    "Use pre-cues to anticipate movement",
-    "Make one-touch decisions under pressure",
-    "Turn scanning into an automatic habit",
+    "Use pre cues to anticipate movement",
+    "Make one touch decisions under pressure",
+    "Turn scanning into a habit you can't switch off",
   ];
 
   const trainingPoints = [
-    "Micro-drills that force information checks (not circus tricks)",
+    "Micro drills that force information checks (not circus tricks)",
     "Decision games that scale from garden to full pitch",
     "Match clips + timestamped feedback so it sticks on game day",
   ];
@@ -45,25 +45,16 @@ export const FieldMapFramework = () => {
               transition={{ duration: 0.5, delay: 0.15 }}
               className="text-4xl md:text-5xl font-bold mb-8"
             >
-              The Field Map Framework™ — The System Pros Use to See the Game First
+              The Field Map Framework™
             </motion.h2>
 
             <motion.p
               initial={{ opacity: 0, y: 10 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.25 }}
-              className="text-lg text-muted-foreground mb-6 leading-relaxed"
+              className="text-lg text-muted-foreground mb-8 leading-relaxed"
             >
-              At PB Coaching, we built a brain-first system trusted by academy and aspiring pro players across Europe.
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0, y: 10 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.35 }}
-              className="text-lg text-muted-foreground mb-6 leading-relaxed"
-            >
-              It trains your awareness, scanning, and split-second decision-making using our proven <span className="text-accent font-semibold">Field Map Framework™</span> — so you play calmer, smarter, and faster.
+              Our brain first system used with academy and aspiring pro players.
             </motion.p>
 
             <motion.div
@@ -118,7 +109,7 @@ export const FieldMapFramework = () => {
               transition={{ duration: 0.5, delay: 0.95 }}
               className="text-lg text-foreground mb-8 leading-relaxed font-semibold"
             >
-              Result: You stop reacting to football. You control it.
+              Result: you stop reacting to football, you control it.
             </motion.p>
 
             <motion.div
