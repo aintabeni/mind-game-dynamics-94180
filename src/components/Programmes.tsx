@@ -1,4 +1,4 @@
-import { RainbowButton } from "@/components/ui/rainbow-button";
+import { Button } from "@/components/ui/button";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 import { cn } from "@/lib/utils";
 
@@ -120,12 +120,14 @@ export const Programmes = () => {
                   </div>
                   
                   <div className="mt-6">
-                    <RainbowButton
+                    <Button
+                      variant="cta"
+                      size="lg"
                       className="w-full"
                       onClick={() => window.open(programme.link, "_blank")}
                     >
                       {programme.cta}
-                    </RainbowButton>
+                    </Button>
                   </div>
                 </div>
               </div>
