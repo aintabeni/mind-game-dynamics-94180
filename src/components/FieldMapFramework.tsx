@@ -17,9 +17,16 @@ export const FieldMapFramework = () => {
   };
 
   const listItems = [
-    "Anticipate movements before they happen",
-    "Recognize patterns in real time",
-    "Make faster, clearer decisions under pressure",
+    "Build a real field map before receiving",
+    "Use pre-cues to anticipate movement",
+    "Make one-touch decisions under pressure",
+    "Turn scanning into an automatic habit",
+  ];
+
+  const trainingPoints = [
+    "Micro-drills that force information checks (not circus tricks)",
+    "Decision games that scale from garden to full pitch",
+    "Match clips + timestamped feedback so it sticks on game day",
   ];
 
   return (
@@ -38,7 +45,7 @@ export const FieldMapFramework = () => {
               transition={{ duration: 0.5, delay: 0.15 }}
               className="text-4xl md:text-5xl font-bold mb-8"
             >
-              The System That Trains Your Brain Like a Pro
+              The Field Map Framework™ — The System Pros Use to See the Game First
             </motion.h2>
 
             <motion.p
@@ -47,8 +54,7 @@ export const FieldMapFramework = () => {
               transition={{ duration: 0.5, delay: 0.25 }}
               className="text-lg text-muted-foreground mb-6 leading-relaxed"
             >
-              At PB Coaching, we built a system that trains this hidden skill — the same way
-              professionals develop it.
+              At PB Coaching, we built a brain-first system trusted by academy and aspiring pro players across Europe.
             </motion.p>
 
             <motion.p
@@ -57,18 +63,16 @@ export const FieldMapFramework = () => {
               transition={{ duration: 0.5, delay: 0.35 }}
               className="text-lg text-muted-foreground mb-6 leading-relaxed"
             >
-              It is called the <span className="text-accent font-semibold">Field Map Framework</span>,
-              a brain-first training system that sharpens your awareness, scanning, and split-second
-              decision making.
+              It trains your awareness, scanning, and split-second decision-making using our proven <span className="text-accent font-semibold">Field Map Framework™</span> — so you play calmer, smarter, and faster.
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.45 }}
-              className="mb-8"
+              className="mb-6"
             >
-              <p className="text-lg text-foreground mb-4 font-semibold">You will learn to:</p>
+              <p className="text-lg text-foreground mb-4 font-semibold">You'll learn to:</p>
               <ul className="space-y-3">
                 {listItems.map((item, index) => (
                   <motion.li
@@ -85,14 +89,36 @@ export const FieldMapFramework = () => {
               </ul>
             </motion.div>
 
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.65 }}
+              className="mb-6"
+            >
+              <p className="text-lg text-foreground mb-4 font-semibold">You'll train with:</p>
+              <ul className="space-y-3">
+                {trainingPoints.map((item, index) => (
+                  <motion.li
+                    key={index}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={inView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.5, delay: 0.65 + index * 0.15 }}
+                    className="flex items-start text-muted-foreground text-lg"
+                  >
+                    <span className="text-accent mr-3 font-bold">•</span>
+                    {item}
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
+
             <motion.p
               initial={{ opacity: 0, y: 10 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.8 }}
-              className="text-lg text-muted-foreground mb-8 leading-relaxed"
+              transition={{ duration: 0.5, delay: 0.95 }}
+              className="text-lg text-foreground mb-8 leading-relaxed font-semibold"
             >
-              When you master scanning, you stop reacting to the game and start controlling it.
-              You play with confidence, calm, and total clarity.
+              Result: You stop reacting to football. You control it.
             </motion.p>
 
             <motion.div

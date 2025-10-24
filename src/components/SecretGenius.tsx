@@ -8,12 +8,10 @@ export const SecretGenius = () => {
   });
 
   const paragraphs = [
-    "Ever wondered how players like De Bruyne, Messi, or Modrić always seem to make the perfect pass before the space even exists?",
-    "It is not magic. It is not luck.\nIt is something far more powerful.",
-    "It is called Scanning.",
-    "They constantly read the field, collect information, and predict what comes next before the ball even arrives.\nThey train their brain to process the game like a map.",
-    "By the time they receive the ball, they already know what to do.",
-    "That is why they look calm when others panic.\nWhy their movements feel effortless.\nWhy they always seem one step ahead.",
+    "Think De Bruyne. Messi. Modrić.\nThey don't guess — they scan.\nThey collect information before the ball arrives, process faster, and decide cleaner.",
+    "This isn't luck — it's a trainable skill called Scanning.",
+    "When you train your brain:\n• Your first touch is already a second touch in your head.\n• Pressure feels slower.\n• Options appear before the ball does.",
+    "That's the difference between reacting and reading the game.",
   ];
 
   return (
