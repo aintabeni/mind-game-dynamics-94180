@@ -16,6 +16,10 @@ export default {
       'lg-custom': '1000px',
     },
     extend: {
+      fontFamily: {
+        'roboto-slab': ['Roboto Slab', 'serif'],
+        'sans': ['Roboto Slab', 'serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
