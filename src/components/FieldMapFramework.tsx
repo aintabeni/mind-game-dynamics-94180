@@ -129,6 +129,7 @@ export const FieldMapFramework = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={inView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: 0.6 }}
+              className="flex justify-center"
             >
               <ButtonColorful
                 label="Explore Training Options"
