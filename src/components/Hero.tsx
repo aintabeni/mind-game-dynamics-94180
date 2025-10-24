@@ -28,12 +28,12 @@ export const Hero = () => {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-20 max-w-5xl mx-auto px-6 text-center">
+      <div className="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 md:px-8 text-center">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-sm md:text-base text-accent font-semibold mb-4 uppercase tracking-wide"
+          className="text-xs sm:text-sm md:text-base lg:text-lg text-accent font-semibold mb-3 sm:mb-4 uppercase tracking-wide"
         >
           PB Coaching: Football is a thinking sport, who sees the whole picture first.
         </motion.p>
@@ -42,7 +42,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight"
         >
           Train Smarter. Think Faster.
         </motion.h1>
@@ -51,7 +51,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed"
+          className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed"
         >
           Unlock the hidden skill that separates the pros from everyone else. Elite-level brain
           training that sharpens your scanning, decision making, and football IQ.
@@ -66,7 +66,6 @@ export const Hero = () => {
           <ButtonColorful
             label="Explore Training · Join Mentorship"
             onClick={() => scrollToSection("programmes")}
-            className="text-lg px-10 py-6 h-auto"
           />
           
           <p className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">

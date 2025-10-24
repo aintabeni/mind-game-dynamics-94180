@@ -21,7 +21,7 @@ export const FinalCTA = () => {
   ];
 
   return (
-    <section ref={ref} className="py-24 px-6 bg-gradient-to-b from-secondary to-background">
+    <section ref={ref} className="py-24 px-4 sm:px-6 md:px-8 bg-gradient-to-b from-secondary to-background">
       <motion.div
         initial={{ opacity: 0 }}
         animate={inView ? { opacity: 1 } : {}}
@@ -32,12 +32,12 @@ export const FinalCTA = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.15 }}
-          className="text-4xl md:text-5xl font-bold mb-8"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8"
         >
           Take Control of the Game
         </motion.h2>
 
-        <div className="space-y-6 text-lg md:text-xl text-muted-foreground mb-10">
+        <div className="space-y-6 text-base sm:text-lg md:text-xl text-muted-foreground mb-8 sm:mb-10">
           {paragraphs.map((paragraph, index) => (
             <motion.p
               key={index}
@@ -59,7 +59,6 @@ export const FinalCTA = () => {
           <ButtonColorful
             label="Start Your Training"
             onClick={() => scrollToSection("programmes")}
-            className="text-lg px-10 py-6 h-auto"
           />
         </motion.div>
       </motion.div>

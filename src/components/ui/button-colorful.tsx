@@ -14,7 +14,7 @@ export function ButtonColorful({
     return (
         <Button
             className={cn(
-                "relative h-10 px-4 overflow-hidden",
+                "relative h-8 sm:h-10 md:h-12 px-3 sm:px-4 md:px-6 overflow-hidden",
                 "bg-zinc-900 dark:bg-zinc-100",
                 "transition-all duration-500 ease-out",
                 "hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20",
@@ -38,9 +38,9 @@ export function ButtonColorful({
             />
 
             {/* Content */}
-            <div className="relative flex items-center justify-center gap-2">
-                <span className="text-white dark:text-zinc-900 transition-transform duration-500 group-hover:translate-x-[-2px]">{label}</span>
-                <ArrowUpRight className="w-3.5 h-3.5 text-white/90 dark:text-zinc-900/90 transition-transform duration-500 group-hover:translate-x-[2px] group-hover:translate-y-[-2px]" />
+            <div className="relative flex items-center justify-center gap-1 sm:gap-2">
+                <span className="text-sm sm:text-base md:text-lg text-white dark:text-zinc-900 transition-transform duration-500 group-hover:translate-x-[-2px]">{label}</span>
+                <ArrowUpRight className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-white/90 dark:text-zinc-900/90 transition-transform duration-500 group-hover:translate-x-[2px] group-hover:translate-y-[-2px]" />
             </div>
         </Button>
     );
