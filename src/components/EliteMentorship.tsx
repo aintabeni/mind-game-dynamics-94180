@@ -23,12 +23,12 @@ export const EliteMentorship = () => {
         transition={{ duration: 0.6 }}
         className="max-w-7xl mx-auto"
       >
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid lg-custom:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.35 }}
-            className="order-2 md:order-1"
+            className="order-2 lg-custom:order-1"
           >
             <img
               src={menteesImage}
@@ -37,7 +37,7 @@ export const EliteMentorship = () => {
             />
           </motion.div>
 
-          <div className="order-1 md:order-2">
+          <div className="order-1 lg-custom:order-2">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}

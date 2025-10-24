@@ -33,7 +33,7 @@ export const WhoAmI = () => {
           Meet Patrick Bergmann
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid lg-custom:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={inView ? { opacity: 1, scale: 1 } : {}}
