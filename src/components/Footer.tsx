@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Facebook, Instagram, Youtube } from "lucide-react";
+import { Instagram, Youtube, Music } from "lucide-react";
 
 export const Footer = () => {
   const [ref, inView] = useInView({
@@ -15,9 +15,9 @@ export const Footer = () => {
   ];
 
   const socials = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Youtube, href: "#", label: "YouTube" },
+    { icon: Instagram, href: "https://www.instagram.com/pb_coaching.iq/", label: "Instagram" },
+    { icon: Music, href: "https://www.tiktok.com/@pb_coaching_iq", label: "TikTok" },
+    { icon: Youtube, href: "https://www.youtube.com/@pb_coaching_iq", label: "YouTube" },
   ];
 
   return (
@@ -55,6 +55,8 @@ export const Footer = () => {
             <motion.a
               key={social.label}
               href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 10 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: index * 0.1 }}
