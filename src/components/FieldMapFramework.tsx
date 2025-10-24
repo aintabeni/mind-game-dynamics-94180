@@ -38,6 +38,19 @@ export const FieldMapFramework = () => {
         className="max-w-7xl mx-auto"
       >
         <div className="grid md:grid-cols-2 gap-12 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, delay: 0.35 }}
+            className="relative"
+          >
+            <img
+              src={mentorImage}
+              alt="Patrick with mentor"
+              className="rounded-lg shadow-2xl w-full"
+            />
+          </motion.div>
+
           <div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -124,19 +137,6 @@ export const FieldMapFramework = () => {
               />
             </motion.div>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.35 }}
-            className="relative"
-          >
-            <img
-              src={mentorImage}
-              alt="Patrick with mentor"
-              className="rounded-lg shadow-2xl w-full"
-            />
-          </motion.div>
         </div>
       </motion.div>
     </section>
