@@ -1,10 +1,6 @@
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-
-gsap.registerPlugin(ScrollTrigger);
+import { GlowingEffect } from "@/components/ui/glowing-effect";
+import { cn } from "@/lib/utils";
 
 const programmes = [
   {
@@ -68,54 +64,6 @@ const programmes = [
 ];
 
 export const Programmes = () => {
-  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
-
-  useEffect(() => {
-    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (prefersReducedMotion) return;
-
-    cardsRef.current.forEach((card, index) => {
-      if (!card) return;
-
-      gsap.fromTo(
-        card,
-        {
-          opacity: 0,
-          y: 50,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.6,
-          delay: index * 0.15,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: card,
-            start: "top 80%",
-            toggleActions: "play none none none",
-          },
-        }
-      );
-
-      // Hover animation
-      card.addEventListener("mouseenter", () => {
-        gsap.to(card, {
-          scale: 1.05,
-          boxShadow: "0 8px 16px rgba(0,0,0,0.2)",
-          duration: 0.3,
-        });
-      });
-
-      card.addEventListener("mouseleave", () => {
-        gsap.to(card, {
-          scale: 1,
-          boxShadow: "0 0 0 rgba(0,0,0,0)",
-          duration: 0.3,
-        });
-      });
-    });
-  }, []);
-
   return (
     <section id="programmes" className="py-24 px-6 bg-card">
       <div className="max-w-7xl mx-auto">
@@ -123,15 +71,25 @@ export const Programmes = () => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {programmes.map((programme, index) => (
-            <div key={index} ref={(el) => (cardsRef.current[index] = el)}>
-              <Card className="h-full flex flex-col border-2 border-accent/30 hover:border-accent transition-colors duration-300 bg-gradient-to-b from-card to-secondary">
-                <CardHeader>
+            <div key={index} className="min-h-[28rem]">
+              <div className="relative h-full rounded-[1.25rem] border-[0.75px] border-border p-2 md:rounded-[1.5rem] md:p-3">
+                <GlowingEffect
+                  spread={40}
+                  glow={true}
+                  disabled={false}
+                  proximity={64}
+                  inactiveZone={0.01}
+                  borderWidth={3}
+                />
+                <div className="relative flex h-full flex-col overflow-hidden rounded-xl border-[0.75px] bg-background p-6 shadow-sm dark:shadow-[0px_0px_27px_0px_rgba(45,45,45,0.3)]">
                   {programme.badge && (
                     <div className="bg-accent text-accent-foreground text-sm font-semibold px-3 py-1 rounded-full mb-4 inline-block w-fit">
                       {programme.badge}
                     </div>
                   )}
-                  <CardTitle className="text-2xl mb-2">{programme.title}</CardTitle>
+                  
+                  <h3 className="text-2xl font-bold mb-2">{programme.title}</h3>
+                  
                   {programme.price && (
                     <div className="text-3xl font-bold text-accent mb-2">
                       {programme.price}{" "}
@@ -140,36 +98,39 @@ export const Programmes = () => {
                       </span>
                     </div>
                   )}
-                  <CardDescription className="text-base">{programme.subtitle}</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-muted-foreground mb-4">{programme.description}</p>
-                  <p className="text-muted-foreground mb-3 font-semibold">{programme.intro}</p>
-                  <ul className="space-y-2 mb-4">
-                    {programme.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start text-muted-foreground">
-                        <span className="text-accent mr-2 font-bold">•</span>
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  {programme.footer && (
-                    <p className="text-sm text-muted-foreground italic mt-4 border-t border-border pt-4">
-                      {programme.footer}
-                    </p>
-                  )}
-                </CardContent>
-                <CardFooter>
-                  <Button
-                    variant="cta"
-                    size="lg"
-                    className="w-full"
-                    onClick={() => window.open(programme.link, "_blank")}
-                  >
-                    {programme.cta}
-                  </Button>
-                </CardFooter>
-              </Card>
+                  
+                  <p className="text-base text-muted-foreground mb-4">{programme.subtitle}</p>
+                  
+                  <div className="flex-grow">
+                    <p className="text-muted-foreground mb-4">{programme.description}</p>
+                    <p className="text-muted-foreground mb-3 font-semibold">{programme.intro}</p>
+                    <ul className="space-y-2 mb-4">
+                      {programme.features.map((feature, idx) => (
+                        <li key={idx} className="flex items-start text-muted-foreground text-sm">
+                          <span className="text-accent mr-2 font-bold">•</span>
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    {programme.footer && (
+                      <p className="text-sm text-muted-foreground italic mt-4 border-t border-border pt-4">
+                        {programme.footer}
+                      </p>
+                    )}
+                  </div>
+                  
+                  <div className="mt-6">
+                    <Button
+                      variant="cta"
+                      size="lg"
+                      className="w-full"
+                      onClick={() => window.open(programme.link, "_blank")}
+                    >
+                      {programme.cta}
+                    </Button>
+                  </div>
+                </div>
+              </div>
             </div>
           ))}
         </div>
