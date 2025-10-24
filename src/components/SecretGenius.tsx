@@ -8,10 +8,9 @@ export const SecretGenius = () => {
   });
 
   const paragraphs = [
-    "Think De Bruyne. Messi. Modrić.\nThey don't guess — they scan.\nThey collect information before the ball arrives, process faster, and decide cleaner.",
-    "This isn't luck — it's a trainable skill called Scanning.",
-    "When you train your brain:\n• Your first touch is already a second touch in your head.\n• Pressure feels slower.\n• Options appear before the ball does.",
-    "That's the difference between reacting and reading the game.",
+    "Think Pedri, Messi, Mbappe. They don't guess, they scan.\nThey collect information before the ball arrives and decide faster than everyone else.",
+    "This isn't luck. It's a trainable skill.\n• See more: constant head checks with purpose\n• Process faster: recognise patterns in real time\n• Decide cleaner: right option, first time, under pressure",
+    "Train it right and the chaos slows down.",
   ];
 
   return (
@@ -28,7 +27,7 @@ export const SecretGenius = () => {
           transition={{ duration: 0.5, delay: 0.15 }}
           className="text-4xl md:text-5xl font-bold mb-12 text-left"
         >
-          How Top Players Stay One Step Ahead
+          Why They're Always One Step Ahead
         </motion.h2>
 
         <div className="space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
