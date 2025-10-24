@@ -33,7 +33,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-xs sm:text-sm md:text-base lg:text-lg text-accent font-semibold mb-3 sm:mb-4 uppercase tracking-wide"
+          className="text-sm sm:text-base md:text-lg lg:text-xl text-accent font-semibold mb-3 sm:mb-4 uppercase tracking-wide"
         >
           PB Coaching: Football is a thinking sport, who sees the whole picture first.
         </motion.p>
@@ -42,7 +42,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 leading-tight"
+          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold mb-4 sm:mb-6 leading-tight"
         >
           Train Smarter. Think Faster.
         </motion.h1>
@@ -51,7 +51,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed"
+          className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed"
         >
           Unlock the hidden skill that separates the pros from everyone else. Elite-level brain
           training that sharpens your scanning, decision making, and football IQ.
@@ -68,7 +68,7 @@ export const Hero = () => {
             onClick={() => scrollToSection("programmes")}
           />
           
-          <p className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Brain first training that sharpens scanning, decision making, and Football IQ. Designed for serious players (14–22). Proven on the pitch.
           </p>
         </motion.div>
