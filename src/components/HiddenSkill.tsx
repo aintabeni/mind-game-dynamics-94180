@@ -20,7 +20,7 @@ export const HiddenSkill = () => {
         initial={{ opacity: 0 }}
         animate={inView ? { opacity: 1 } : {}}
         transition={{ duration: 0.6 }}
-        className="max-w-4xl mx-auto text-center"
+        className="max-w-4xl mx-auto text-left"
       >
         <motion.h2
           initial={{ opacity: 0, x: -20 }}
