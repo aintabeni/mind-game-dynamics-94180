@@ -28,12 +28,13 @@ export const Hero = () => {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8 text-center">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 text-center py-8 sm:py-12 lg:py-16">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-sm sm:text-base md:text-lg lg:text-2xl xl:text-3xl text-accent font-semibold mb-3 sm:mb-4 uppercase tracking-wide"
+          className="text-accent font-semibold mb-4 sm:mb-6 lg:mb-8 uppercase tracking-wide"
+          style={{ fontSize: "clamp(0.875rem, 1.5vw, 1.5rem)" }}
         >
           PB Coaching: Football is a thinking sport, who sees the whole picture first.
         </motion.p>
@@ -42,7 +43,8 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-[10rem] xl:text-[12rem] font-bold mb-4 sm:mb-6 leading-tight"
+          className="font-bold mb-6 sm:mb-8 lg:mb-10 leading-[1.1]"
+          style={{ fontSize: "clamp(2.5rem, 8vw, 5rem)" }}
         >
           Train Smarter. Think Faster.
         </motion.h1>
@@ -51,7 +53,8 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed"
+          className="text-muted-foreground mb-8 sm:mb-10 lg:mb-12 max-w-4xl mx-auto leading-relaxed"
+          style={{ fontSize: "clamp(1.125rem, 2.5vw, 2rem)" }}
         >
           Unlock the hidden skill that separates the pros from everyone else. Elite-level brain
           training that sharpens your scanning, decision making, and football IQ.
@@ -61,14 +64,19 @@ export const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="space-y-4"
+          className="space-y-6"
         >
-          <ButtonColorful
-            label="Explore Training · Join Mentorship"
-            onClick={() => scrollToSection("programmes")}
-          />
+          <div className="scale-100 lg:scale-110">
+            <ButtonColorful
+              label="Explore Training · Join Mentorship"
+              onClick={() => scrollToSection("programmes")}
+            />
+          </div>
           
-          <p className="text-base md:text-lg lg:text-xl xl:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p 
+            className="text-muted-foreground max-w-3xl mx-auto leading-relaxed"
+            style={{ fontSize: "clamp(1rem, 1.5vw, 1.25rem)" }}
+          >
             Brain first training that sharpens scanning, decision making, and Football IQ. Designed for serious players (14–22). Proven on the pitch.
           </p>
         </motion.div>
