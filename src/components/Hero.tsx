@@ -29,6 +29,15 @@ export const Hero = () => {
 
       {/* Content */}
       <div className="relative z-20 max-w-5xl mx-auto px-6 text-center">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="text-sm md:text-base text-accent font-semibold mb-4 uppercase tracking-wide"
+        >
+          PB Coaching: Football is a thinking sport, who sees the whole picture first.
+        </motion.p>
+
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -52,6 +61,7 @@ export const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
+          className="space-y-4"
         >
           <Button
             variant="hero"
@@ -59,8 +69,12 @@ export const Hero = () => {
             onClick={() => scrollToSection("programmes")}
             className="text-lg px-10 py-6 h-auto"
           >
-            View Coaching Programmes
+            Explore Training · Join Mentorship
           </Button>
+          
+          <p className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Brain first training that sharpens scanning, decision making, and Football IQ. Designed for serious players (14–22). Proven on the pitch.
+          </p>
         </motion.div>
       </div>
     </section>
