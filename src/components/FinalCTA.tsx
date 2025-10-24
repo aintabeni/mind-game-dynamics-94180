@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Button } from "@/components/ui/button";
+import { RainbowButton } from "@/components/ui/rainbow-button";
 
 export const FinalCTA = () => {
   const [ref, inView] = useInView({
@@ -56,14 +56,12 @@ export const FinalCTA = () => {
           animate={inView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <Button
-            variant="cta"
-            size="lg"
+          <RainbowButton
             onClick={() => scrollToSection("programmes")}
-            className="text-lg px-10 py-6 h-auto animate-pulse-glow"
+            className="text-lg px-10 py-6 h-auto"
           >
             Start Your Training
-          </Button>
+          </RainbowButton>
         </motion.div>
       </motion.div>
     </section>

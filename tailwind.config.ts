@@ -57,6 +57,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "color-1": "hsl(var(--color-1))",
+        "color-2": "hsl(var(--color-2))",
+        "color-3": "hsl(var(--color-3))",
+        "color-4": "hsl(var(--color-4))",
+        "color-5": "hsl(var(--color-5))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -96,6 +101,10 @@ export default {
           "0%, 100%": { boxShadow: "0 0 20px hsl(45, 90%, 55%, 0.3)" },
           "50%": { boxShadow: "0 0 30px hsl(45, 90%, 55%, 0.5)" },
         },
+        rainbow: {
+          "0%": { "background-position": "0%" },
+          "100%": { "background-position": "200%" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -106,6 +115,7 @@ export default {
         "slide-right": "slide-right 0.7s ease-out",
         "slide-left": "slide-left 0.7s ease-out",
         "pulse-glow": "pulse-glow 2s ease-in-out infinite",
+        rainbow: "rainbow var(--speed, 2s) infinite linear",
       },
     },
   },
