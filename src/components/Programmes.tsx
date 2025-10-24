@@ -60,7 +60,6 @@ const programmes = [
       "Core scanning drills for every position",
       "Setup and spacing guides",
       "Access to a special app for reaction training",
-      "Tools to assess and track your progress",
     ],
     cta: "Get the eBook",
     link: "https://whop.com/pb-coaching/scanning-mastery-playbook/",
