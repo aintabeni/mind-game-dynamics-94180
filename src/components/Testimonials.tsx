@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Button } from "@/components/ui/button";
+import { ButtonColorful } from "@/components/ui/button-colorful";
 import { Card, CardContent } from "@/components/ui/card";
 
 const testimonials = [
@@ -72,14 +72,11 @@ export const Testimonials = () => {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="text-center"
         >
-          <Button
-            variant="cta"
-            size="lg"
+          <ButtonColorful
+            label="Join the Mentorship"
             onClick={() => scrollToSection("programmes")}
-            className="text-lg"
-          >
-            Join the Mentorship
-          </Button>
+            className="text-lg px-10 py-6 h-auto"
+          />
         </motion.div>
       </motion.div>
     </section>

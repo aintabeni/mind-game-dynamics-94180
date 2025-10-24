@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { ButtonColorful } from "@/components/ui/button-colorful";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 import { cn } from "@/lib/utils";
 
@@ -120,14 +120,11 @@ export const Programmes = () => {
                   </div>
                   
                   <div className="mt-6">
-                    <Button
-                      variant="cta"
-                      size="lg"
-                      className="w-full"
+                    <ButtonColorful
+                      label={programme.cta}
+                      className="w-full h-auto px-6 py-3"
                       onClick={() => window.open(programme.link, "_blank")}
-                    >
-                      {programme.cta}
-                    </Button>
+                    />
                   </div>
                 </div>
               </div>

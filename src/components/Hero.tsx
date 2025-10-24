@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+import { ButtonColorful } from "@/components/ui/button-colorful";
 import heroImage from "@/assets/patrick-playing.jpg";
 
 export const Hero = () => {
@@ -63,14 +63,11 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="space-y-4"
         >
-          <Button
-            variant="hero"
-            size="lg"
+          <ButtonColorful
+            label="Explore Training · Join Mentorship"
             onClick={() => scrollToSection("programmes")}
             className="text-lg px-10 py-6 h-auto"
-          >
-            Explore Training · Join Mentorship
-          </Button>
+          />
           
           <p className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Brain first training that sharpens scanning, decision making, and Football IQ. Designed for serious players (14–22). Proven on the pitch.

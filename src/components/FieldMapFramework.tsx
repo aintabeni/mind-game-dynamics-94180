@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Button } from "@/components/ui/button";
+import { ButtonColorful } from "@/components/ui/button-colorful";
 import mentorImage from "@/assets/patrick-with-mentor.jpg";
 
 export const FieldMapFramework = () => {
@@ -117,14 +117,11 @@ export const FieldMapFramework = () => {
               animate={inView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              <Button
-                variant="cta"
-                size="lg"
+              <ButtonColorful
+                label="Explore Training Options"
                 onClick={() => scrollToSection("programmes")}
-                className="text-lg"
-              >
-                Explore Training Options
-              </Button>
+                className="text-lg px-10 py-6 h-auto"
+              />
             </motion.div>
           </div>
 
