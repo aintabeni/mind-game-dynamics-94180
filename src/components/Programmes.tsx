@@ -8,15 +8,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 const programmes = [
   {
-    title: "1:1 Scanning Mentorship",
+    title: "1:1 Mentorship",
     subtitle: "Exclusive Personal Coaching",
     badge: "Only 5 spots available each month",
     description:
-      "For players who want to fast-track their progress and get detailed, professional feedback.",
+      "For players who want to fast track their progress and get detailed, professional feedback.",
     intro:
-      "You will train directly with Patrick and receive hands-on guidance on how to read the game, position smarter, and process the field faster.",
+      "You will train directly with Patrick and receive hands on guidance on how to read the game, position smarter, and process the field faster.",
     features: [
-      "Personalized video breakdowns of your matches",
+      "Personalised video breakdowns of your matches",
       "Weekly feedback and corrections",
       "A custom scanning plan built for your position",
       "Private access for support and accountability",
@@ -32,10 +32,10 @@ const programmes = [
     subtitle: "The full training system trusted by ambitious players across Europe",
     price: "€199",
     originalPrice: "was €397",
-    description: "In 8 weeks, you will go from ball-watching to controlling the rhythm of every match.",
+    description: "In 8 weeks, you will go from ball watching to controlling the rhythm of every match.",
     intro: "Inside, you will get:",
     features: [
-      "Step-by-step progressions (no ball → with ball → under pressure)",
+      "Step by step progressions (no ball → with ball → under pressure)",
       "120+ exclusive scanning drills",
       "Test days to track awareness and reaction speed",
       "Mindset training to stay calm under pressure",
@@ -45,10 +45,10 @@ const programmes = [
     cta: "Join",
     link: "https://whop.com/pb-coaching/8-week-scanning-program/",
     footer:
-      "Only 12 spots left this round. Once they are filled, enrollment closes. Every match you play without this skill is another where you fall a step behind.",
+      "Only 12 spots left this round. Once they are filled, enrolment closes. Every match you play without this skill is another where you fall a step behind.",
   },
   {
-    title: "Scanning Mastery eBook",
+    title: "Master Your Scanning eBook",
     subtitle: "Start building your scanning habits today",
     price: "€57",
     originalPrice: "was €97",
@@ -59,7 +59,7 @@ const programmes = [
       "The science behind scanning and decision making",
       "Core scanning drills for every position",
       "Setup and spacing guides",
-      "How to use the SwitchedOn app for reaction training",
+      "Access to a special app for reaction training",
       "Tools to assess and track your progress",
     ],
     cta: "Get the eBook",
