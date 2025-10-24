@@ -66,12 +66,11 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="space-y-6"
         >
-          <div className="scale-100 lg:scale-110">
-            <ButtonColorful
-              label="Explore Training · Join Mentorship"
-              onClick={() => scrollToSection("programmes")}
-            />
-          </div>
+          <ButtonColorful
+            label="Explore Training · Join Mentorship"
+            onClick={() => scrollToSection("programmes")}
+            className="text-lg px-10 py-6 h-auto"
+          />
           
           <p 
             className="text-muted-foreground max-w-3xl mx-auto leading-relaxed"
