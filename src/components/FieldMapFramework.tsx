@@ -37,7 +37,7 @@ export const FieldMapFramework = () => {
         transition={{ duration: 0.6 }}
         className="max-w-7xl mx-auto"
       >
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid lg-custom:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
