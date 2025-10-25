@@ -124,21 +124,21 @@ export const FieldMapFramework = () => {
             >
               Result: you stop reacting to football, you control it.
             </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={inView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              className="flex justify-center"
-            >
-              <ButtonColorful
-                label="Explore Training Options"
-                onClick={() => scrollToSection("programmes")}
-                className="text-lg px-10 py-6 h-auto"
-              />
-            </motion.div>
           </div>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={inView ? { opacity: 1, scale: 1 } : {}}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          className="flex justify-center mt-12"
+        >
+          <ButtonColorful
+            label="Explore Training Options"
+            onClick={() => scrollToSection("programmes")}
+            className="text-lg px-10 py-6 h-auto"
+          />
+        </motion.div>
       </motion.div>
     </section>
   );
