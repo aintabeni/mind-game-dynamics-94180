@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Instagram, Youtube } from "lucide-react";
-import { TikTokIcon } from "@/components/ui/tiktok-icon";
+import { Instagram, Youtube, Music } from "lucide-react";
 
 export const Footer = () => {
   const [ref, inView] = useInView({
@@ -17,7 +16,7 @@ export const Footer = () => {
 
   const socials = [
     { icon: Instagram, href: "https://www.instagram.com/pb_coaching.iq/", label: "Instagram" },
-    { icon: TikTokIcon, href: "https://www.tiktok.com/@pb_coaching.iq", label: "TikTok" },
+    { icon: Music, href: "https://www.tiktok.com/@pb_coaching_iq", label: "TikTok" },
     { icon: Youtube, href: "https://www.youtube.com/@pb_coaching_iq", label: "YouTube" },
   ];
 

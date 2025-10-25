@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ButtonColorful } from "@/components/ui/button-colorful";
-import mentorImage from "@/assets/patrick-blue-background.jpg";
+import mentorImage from "@/assets/patrick-with-mentor.jpg";
 
 export const FieldMapFramework = () => {
   const [ref, inView] = useInView({
