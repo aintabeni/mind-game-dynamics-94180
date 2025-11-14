@@ -89,7 +89,7 @@ export const Programmes = () => {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">The Programmes</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-1 gap-8">
           {programmes.map((programme, index) => (
             <div key={index} className="min-h-[28rem]">
               <div className="relative h-full rounded-[1.25rem] border-[0.75px] border-border p-2 md:rounded-[1.5rem] md:p-3">
