@@ -61,6 +61,26 @@ const programmes = [
     link: "https://whop.com/pb-coaching/scanning-mastery-playbook/",
     footer: null,
   },
+  {
+    title: "The Smart Player Nutrition Blueprint",
+    subtitle: "Fuel smarter. Recover faster. Play longer.",
+    price: "€9",
+    originalPrice: "was €49",
+    description:
+      "Everything young footballers need to start eating like modern pros and boost performance immediately.",
+    intro: "Inside, you will find:",
+    features: [
+      "Simple matchday meal plans",
+      "Training-day fuel guides",
+      "Hydration & cramp-prevention formula",
+      "Fast-recovery nutrition protocol",
+      "Budget shopping list",
+      "Supplements that actually work",
+    ],
+    cta: "Get the eBook",
+    link: "#",
+    footer: null,
+  },
 ];
 
 export const Programmes = () => {
@@ -69,7 +89,7 @@ export const Programmes = () => {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">The Programmes</h2>
 
-        <div className="grid lg-custom:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {programmes.map((programme, index) => (
             <div key={index} className="min-h-[28rem]">
               <div className="relative h-full rounded-[1.25rem] border-[0.75px] border-border p-2 md:rounded-[1.5rem] md:p-3">
