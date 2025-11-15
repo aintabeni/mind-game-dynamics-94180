@@ -78,7 +78,7 @@ const programmes = [
       "Supplements that actually work",
     ],
     cta: "Get the eBook",
-    link: "#",
+    link: "https://whop.com/pb-coaching/fuel-like-a-pro/",
     footer: null,
   },
 ];
