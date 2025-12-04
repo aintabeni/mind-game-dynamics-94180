@@ -4,6 +4,26 @@ import { cn } from "@/lib/utils";
 
 const programmes = [
   {
+    title: "Scanning Accelerator Mentorship",
+    subtitle: "Elite Game-Intelligence Training",
+    badge: "Only 10 spots each cohort",
+    description:
+      "For ambitious players who want to think faster, see more, and make better decisions every match.",
+    intro:
+      "Train directly inside the Scanning Accelerator system and build the habits that separate top players from everyone else.",
+    features: [
+      "Daily actionables to build consistent scanning habits",
+      "Weekly community meetings for live guidance",
+      "Full access to the 8-Week Scanning Program",
+      "Position-specific drills and decision training",
+      "Private chat access for support and accountability",
+    ],
+    cta: "Join the Scanning Accelerator",
+    link: "#",
+    footer:
+      "Only 12 players join each round. Once the spots are taken, the rest keep reacting while you start controlling the game.",
+  },
+  {
     title: "1:1 Mentorship",
     subtitle: "Exclusive Personal Coaching",
     badge: "Only 5 spots available each month",
