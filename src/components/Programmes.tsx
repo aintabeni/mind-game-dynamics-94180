@@ -7,8 +7,7 @@ const programmes = [
     title: "Scanning Accelerator Mentorship",
     subtitle: "Elite Game-Intelligence Training",
     badge: "Only 10 spots each cohort",
-    description:
-      "For ambitious players who want to think faster, see more, and make better decisions every match.",
+    description: "For ambitious players who want to think faster, see more, and make better decisions every match.",
     intro:
       "Train directly inside the Scanning Accelerator system and build the habits that separate top players from everyone else.",
     features: [
@@ -21,14 +20,13 @@ const programmes = [
     cta: "Join the Scanning Accelerator",
     link: "https://whop.com/pb-coaching/scanning-accelerator/",
     footer:
-      "Only 12 players join each round. Once the spots are taken, the rest keep reacting while you start controlling the game.",
+      "Only 10 players join each round. Once the spots are taken, the rest keep reacting while you start controlling the game.",
   },
   {
     title: "1:1 Mentorship",
     subtitle: "Exclusive Personal Coaching",
     badge: "Only 5 spots available each month",
-    description:
-      "For players who want to fast track their progress and get detailed, professional feedback.",
+    description: "For players who want to fast track their progress and get detailed, professional feedback.",
     intro:
       "You will train directly with Patrick and receive hands on guidance on how to read the game, position smarter, and process the field faster.",
     features: [
@@ -127,20 +125,18 @@ export const Programmes = () => {
                       {programme.badge}
                     </div>
                   )}
-                  
+
                   <h3 className="text-2xl font-bold mb-2">{programme.title}</h3>
-                  
+
                   {programme.price && (
                     <div className="text-3xl font-bold text-accent mb-2">
                       {programme.price}{" "}
-                      <span className="text-sm text-muted-foreground line-through">
-                        {programme.originalPrice}
-                      </span>
+                      <span className="text-sm text-muted-foreground line-through">{programme.originalPrice}</span>
                     </div>
                   )}
-                  
+
                   <p className="text-base text-muted-foreground mb-4">{programme.subtitle}</p>
-                  
+
                   <div className="flex-grow">
                     <p className="text-muted-foreground mb-4">{programme.description}</p>
                     <p className="text-muted-foreground mb-3 font-semibold">{programme.intro}</p>
@@ -158,7 +154,7 @@ export const Programmes = () => {
                       </p>
                     )}
                   </div>
-                  
+
                   <div className="mt-6">
                     <ButtonColorful
                       label={programme.cta}
