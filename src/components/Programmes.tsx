@@ -19,7 +19,7 @@ const programmes = [
       "Private chat access for support and accountability",
     ],
     cta: "Join the Scanning Accelerator",
-    link: "#",
+    link: "https://whop.com/pb-coaching/scanning-accelerator/",
     footer:
       "Only 12 players join each round. Once the spots are taken, the rest keep reacting while you start controlling the game.",
   },
