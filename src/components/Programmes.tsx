@@ -31,9 +31,9 @@ export const Programmes = () => {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">The Programmes</h2>
 
-        <div className="grid grid-cols-1 min-[768px]:grid-cols-2 gap-8">
+        <div className="flex justify-center">
           {programmes.map((programme, index) => (
-            <div key={index} className="min-h-[28rem]">
+            <div key={index} className="min-h-[28rem] max-w-xl w-full">
               <div className="relative h-full rounded-[1.25rem] border-[0.75px] border-border p-2 md:rounded-[1.5rem] md:p-3">
                 <GlowingEffect
                   spread={40}
