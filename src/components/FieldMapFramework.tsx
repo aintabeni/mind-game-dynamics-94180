@@ -17,16 +17,16 @@ export const FieldMapFramework = () => {
   };
 
   const listItems = [
-    "Build a real field map before receiving",
-    "Use pre cues to anticipate movement",
-    "Make one touch decisions under pressure",
-    "Turn scanning into a habit you can't switch off",
+    "Build a field map before the ball arrives",
+    "Anticipate movements using pre cues",
+    "Make fast, clean one touch decisions",
+    "Scan automatically, without forcing it",
   ];
 
   const trainingPoints = [
-    "Micro drills that force information checks (not circus tricks)",
-    "Decision games that scale from garden to full pitch",
-    "Match clips + timestamped feedback so it sticks on game day",
+    "Awareness driven drills",
+    "Decision making games (small space → full pitch)",
+    "Match breakdowns with actionable, timestamped feedback",
   ];
 
   return (
@@ -58,7 +58,7 @@ export const FieldMapFramework = () => {
               transition={{ duration: 0.5, delay: 0.15 }}
               className="text-4xl md:text-5xl font-bold mb-8"
             >
-              The Field Map Framework™
+              PB Coaching Brain First Methodology™
             </motion.h2>
 
             <motion.p
@@ -67,7 +67,7 @@ export const FieldMapFramework = () => {
               transition={{ duration: 0.5, delay: 0.25 }}
               className="text-lg text-muted-foreground mb-8 leading-relaxed"
             >
-              Our brain first system used with academy and aspiring pro players.
+              It's a system created by combining the best ideas I've learned from elite mentors, scouts, analysts, and coaches throughout my career, and shaping them into something players can actually use.
             </motion.p>
 
             <motion.div
@@ -76,7 +76,7 @@ export const FieldMapFramework = () => {
               transition={{ duration: 0.5, delay: 0.45 }}
               className="mb-6"
             >
-              <p className="text-lg text-foreground mb-4 font-semibold">You'll learn to:</p>
+              <p className="text-lg text-foreground mb-4 font-semibold">You will learn to:</p>
               <ul className="space-y-3">
                 {listItems.map((item, index) => (
                   <motion.li
@@ -99,7 +99,7 @@ export const FieldMapFramework = () => {
               transition={{ duration: 0.5, delay: 0.65 }}
               className="mb-6"
             >
-              <p className="text-lg text-foreground mb-4 font-semibold">You'll train with:</p>
+              <p className="text-lg text-foreground mb-4 font-semibold">You will train with:</p>
               <ul className="space-y-3">
                 {trainingPoints.map((item, index) => (
                   <motion.li
@@ -116,14 +116,15 @@ export const FieldMapFramework = () => {
               </ul>
             </motion.div>
 
-            <motion.p
+            <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.95 }}
-              className="text-lg text-foreground mb-8 leading-relaxed font-semibold"
+              className="text-lg text-foreground mb-8 leading-relaxed"
             >
-              Result: you stop reacting to football, you control it.
-            </motion.p>
+              <p className="font-semibold mb-2">End result:</p>
+              <p className="text-muted-foreground">Football slows down. Your decisions speed up. And suddenly, everything makes sense.</p>
+            </motion.div>
           </div>
         </div>
 

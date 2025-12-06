@@ -9,10 +9,11 @@ export const EliteMentorship = () => {
   });
 
   const paragraphs = [
-    "Training the body without training the mind is like driving a sports car with no steering wheel.",
-    "With over a decade of coaching and playing experience across Europe, I have helped players from academy to professional level develop the mental side of their game.",
-    "Every session combines technical drills with cognitive training to build mental clarity, decision confidence, and football IQ.",
-    "You will train like the pros — clear, focused, and in control.",
+    "Football has reached its physical limit. Everyone runs fast. Everyone is strong. Everyone lifts.",
+    "The next edge isn't physical, it's cognitive.",
+    "PB Coaching is built from elite mentors and real experience across Europe, turned into a system that upgrades the football brain: scanning, anticipation, decision speed, and IQ.",
+    "It works because it trains the part of the game nobody else trains, the part that actually wins matches.",
+    "The body is maxed out. The brain is untapped potential. That's where we go to work.",
   ];
 
   return (
@@ -44,7 +45,7 @@ export const EliteMentorship = () => {
               transition={{ duration: 0.5, delay: 0.15 }}
               className="text-4xl md:text-5xl font-bold mb-8"
             >
-              Built on Elite Mentorship — Refined Through Experience
+              Built on Elite Mentorship & Refined Through Experience
             </motion.h2>
 
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">

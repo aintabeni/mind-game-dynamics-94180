@@ -4,44 +4,6 @@ import { cn } from "@/lib/utils";
 
 const programmes = [
   {
-    title: "Scanning Accelerator Mentorship",
-    subtitle: "Elite Game-Intelligence Training",
-    badge: "Only 10 spots each cohort",
-    description: "For ambitious players who want to think faster, see more, and make better decisions every match.",
-    intro:
-      "Train directly inside the Scanning Accelerator system and build the habits that separate top players from everyone else.",
-    features: [
-      "Daily actionables to build consistent scanning habits",
-      "Weekly community meetings for live guidance",
-      "Full access to the 8-Week Scanning Program",
-      "Position-specific drills and decision training",
-      "Private chat access for support and accountability",
-    ],
-    cta: "Join the Scanning Accelerator",
-    link: "https://whop.com/pb-coaching/scanning-accelerator/",
-    footer:
-      "Only 10 players join each round. Once the spots are taken, the rest keep reacting while you start controlling the game.",
-  },
-  {
-    title: "1:1 Mentorship",
-    subtitle: "Exclusive Personal Coaching",
-    badge: "Only 5 spots available each month",
-    description: "For players who want to fast track their progress and get detailed, professional feedback.",
-    intro:
-      "You will train directly with Patrick and receive hands on guidance on how to read the game, position smarter, and process the field faster.",
-    features: [
-      "Personalised video breakdowns of your matches",
-      "Weekly feedback and corrections",
-      "A custom scanning plan built for your position",
-      "Private access for support and accountability",
-      "Full access to the 8-Week Scanning Course",
-    ],
-    cta: "Apply to get personal help",
-    link: "https://form.jotform.com/243136283502349",
-    footer:
-      "Only 5 players accepted per month. Every month, a few players gain this edge. Once these 5 spots are taken, the rest keep guessing.",
-  },
-  {
     title: "8-Week Scanning Mentorship",
     subtitle: "The full training system trusted by ambitious players across Europe",
     price: "€199",
@@ -60,44 +22,6 @@ const programmes = [
     link: "https://whop.com/pb-coaching/8-week-scanning-program/",
     footer:
       "Only 12 spots left this round. Once they are filled, enrolment closes. Every match you play without this skill is another where you fall a step behind.",
-  },
-  {
-    title: "Master Your Scanning eBook",
-    subtitle: "Start building your scanning habits today",
-    price: "€57",
-    originalPrice: "was €97",
-    description:
-      "If you want to start solo, this eBook gives you everything you need to begin improving your awareness right away.",
-    intro: "Inside, you will find:",
-    features: [
-      "The science behind scanning and decision making",
-      "Core scanning drills for every position",
-      "Setup and spacing guides",
-      "Access to a special app for reaction training",
-    ],
-    cta: "Get the eBook",
-    link: "https://whop.com/pb-coaching/scanning-mastery-playbook/",
-    footer: null,
-  },
-  {
-    title: "The Smart Player Nutrition Blueprint",
-    subtitle: "Fuel smarter. Recover faster. Play longer.",
-    price: "€9",
-    originalPrice: "was €49",
-    description:
-      "Everything young footballers need to start eating like modern pros and boost performance immediately.",
-    intro: "Inside, you will find:",
-    features: [
-      "Simple matchday meal plans",
-      "Training-day fuel guides",
-      "Hydration & cramp-prevention formula",
-      "Fast-recovery nutrition protocol",
-      "Budget shopping list",
-      "Supplements that actually work",
-    ],
-    cta: "Get the eBook",
-    link: "https://whop.com/pb-coaching/fuel-like-a-pro/",
-    footer: null,
   },
 ];
 
@@ -120,7 +44,7 @@ export const Programmes = () => {
                   borderWidth={3}
                 />
                 <div className="relative flex h-full flex-col overflow-hidden rounded-xl border-[0.75px] bg-background p-6 shadow-sm dark:shadow-[0px_0px_27px_0px_rgba(45,45,45,0.3)]">
-                  {programme.badge && (
+                  {"badge" in programme && typeof programme.badge === "string" && (
                     <div className="bg-accent text-accent-foreground text-sm font-semibold px-3 py-1 rounded-full mb-4 inline-block w-fit">
                       {programme.badge}
                     </div>
