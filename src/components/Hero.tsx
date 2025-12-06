@@ -36,7 +36,7 @@ export const Hero = () => {
           className="text-accent font-semibold mb-4 sm:mb-6 lg:mb-8 uppercase tracking-wide"
           style={{ fontSize: "clamp(0.875rem, 1.5vw, 1.5rem)" }}
         >
-          PB Coaching: Football is a thinking sport, who sees the whole picture first.
+          PB Coaching. Helping players see the game differently, one decision at a time.
         </motion.p>
 
         <motion.h1
@@ -56,28 +56,19 @@ export const Hero = () => {
           className="text-muted-foreground mb-8 sm:mb-10 lg:mb-12 max-w-4xl mx-auto leading-relaxed"
           style={{ fontSize: "clamp(1.125rem, 2.5vw, 2rem)" }}
         >
-          Unlock the hidden skill that separates the pros from everyone else. Elite-level brain
-          training that sharpens your scanning, decision making, and football IQ.
+          The difference between good players and elite players isn't technique, it's how fast their brain works. Train your scanning, decision making, and football IQ the way pros actually do.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="space-y-6"
         >
           <ButtonColorful
             label="Explore Training · Join Mentorship"
             onClick={() => scrollToSection("programmes")}
             className="text-lg px-10 py-6 h-auto"
           />
-          
-          <p 
-            className="text-muted-foreground max-w-3xl mx-auto leading-relaxed"
-            style={{ fontSize: "clamp(1rem, 1.5vw, 1.25rem)" }}
-          >
-            Brain first training that sharpens scanning, decision making, and Football IQ. Designed for serious players (14–22). Proven on the pitch.
-          </p>
         </motion.div>
       </div>
     </section>

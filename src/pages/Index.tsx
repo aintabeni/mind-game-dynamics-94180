@@ -5,7 +5,6 @@ import { FieldMapFramework } from "@/components/FieldMapFramework";
 import { EliteMentorship } from "@/components/EliteMentorship";
 import { Programmes } from "@/components/Programmes";
 import { Testimonials } from "@/components/Testimonials";
-import { WhoAmI } from "@/components/WhoAmI";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
 
@@ -19,7 +18,6 @@ const Index = () => {
       <EliteMentorship />
       <Programmes />
       <Testimonials />
-      <WhoAmI />
       <FinalCTA />
       <Footer />
     </div>
