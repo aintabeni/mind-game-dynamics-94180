@@ -29,7 +29,7 @@ export const Programmes = () => {
   return (
     <section id="programmes" className="py-24 px-6 bg-card">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">My Programme</h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">The Programmes</h2>
 
         <div className="flex justify-center">
           {programmes.map((programme, index) => (
