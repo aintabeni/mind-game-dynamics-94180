@@ -2,11 +2,13 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ButtonColorful } from "@/components/ui/button-colorful";
 import { Card, CardContent } from "@/components/ui/card";
+import ahmedImage from "@/assets/ahmed-ibrahim.png";
 
 const testimonials = [
   {
     quote: "PB Coaching helped me to think faster on the pitch.",
     author: "Ahmed Ibrahim",
+    image: ahmedImage,
   },
   {
     quote: "PB Coaching improved my performance instantly.",
@@ -58,6 +60,15 @@ export const Testimonials = () => {
             >
               <Card className="h-full bg-card border-accent/20 hover:border-accent transition-colors duration-300">
                 <CardContent className="p-6">
+                  {testimonial.image && (
+                    <div className="mb-4">
+                      <img 
+                        src={testimonial.image} 
+                        alt={testimonial.author}
+                        className="w-20 h-20 rounded-full object-cover mx-auto"
+                      />
+                    </div>
+                  )}
                   <p className="text-lg text-foreground mb-4 italic">"{testimonial.quote}"</p>
                   <p className="text-accent font-semibold">— {testimonial.author}</p>
                 </CardContent>
