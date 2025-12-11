@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ButtonColorful } from "@/components/ui/button-colorful";
-import { Card, CardContent } from "@/components/ui/card";
+import { CircularTestimonials } from "@/components/ui/circular-testimonials";
 import ahmedImage from "@/assets/ahmed-ibrahim.png";
 import henrikImage from "@/assets/henrik-hatlen.jpg";
 import marianneImage from "@/assets/marianne-son.jpg";
@@ -9,18 +9,21 @@ import marianneImage from "@/assets/marianne-son.jpg";
 const testimonials = [
   {
     quote: "PB Coaching helped me to think faster on the pitch.",
-    author: "Ahmed Ibrahim",
-    image: ahmedImage,
+    name: "Ahmed Ibrahim",
+    designation: "Player",
+    src: ahmedImage,
   },
   {
     quote: "PB Coaching improved my performance instantly.",
-    author: "Henrik Hatlen Osen, Professional Player",
-    image: henrikImage,
+    name: "Henrik Hatlen Osen",
+    designation: "Professional Player",
+    src: henrikImage,
   },
   {
     quote: "PB Coaching developed the winning mindset and decision making that changed my son's game.",
-    author: "Marianne",
-    image: marianneImage,
+    name: "Marianne",
+    designation: "Parent",
+    src: marianneImage,
   },
 ];
 
@@ -54,29 +57,24 @@ export const Testimonials = () => {
           Real Players. Real Results.
         </motion.h2>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.25 + index * 0.15 }}
-            >
-              <Card className="h-full bg-card border-accent/20 hover:border-accent transition-colors duration-300 overflow-hidden">
-                <div className="aspect-square overflow-hidden">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.author}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <p className="text-lg text-foreground mb-4 italic">"{testimonial.quote}"</p>
-                  <p className="text-accent font-semibold">— {testimonial.author}</p>
-                </CardContent>
-              </Card>
-            </motion.div>
-          ))}
+        <div className="flex items-center justify-center mb-12">
+          <CircularTestimonials
+            testimonials={testimonials}
+            autoplay={true}
+            colors={{
+              name: "#f7f7ff",
+              designation: "#e1e1e1",
+              testimony: "#f1f1f7",
+              arrowBackground: "hsl(45, 90%, 55%)",
+              arrowForeground: "#141414",
+              arrowHoverBackground: "#f7f7ff",
+            }}
+            fontSizes={{
+              name: "28px",
+              designation: "18px",
+              quote: "20px",
+            }}
+          />
         </div>
 
         <motion.div
