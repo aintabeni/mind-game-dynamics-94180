@@ -16,19 +16,19 @@ import feedback12 from "@/assets/feedback-12.jpg";
 import feedback13 from "@/assets/feedback-13.jpg";
 
 const feedbackImages = [
+  { src: feedback11, alt: "Josh testimonial about Patrick training his son Phill during pandemic" },
   { src: feedback1, alt: "Player feedback about decision making improvement" },
   { src: feedback2, alt: "Player celebrating success from training sessions" },
   { src: feedback3, alt: "Parent feedback about player performance" },
+  { src: feedback12, alt: "Jess testimonial about Patrick mentoring Connor" },
   { src: feedback4, alt: "Coach feedback about player debut" },
   { src: feedback5, alt: "Feedback about content quality" },
   { src: feedback6, alt: "Parent sharing match performance stats" },
+  { src: feedback13, alt: "Thelma testimonial about Jonas transformation in Norwegian" },
   { src: feedback7, alt: "Match performance update with goals scored" },
   { src: feedback8, alt: "Comeback performance with 8 goals" },
   { src: feedback9, alt: "Henrik Hatlen Osen professional player testimonial" },
   { src: feedback10, alt: "Coach feedback on excellent game performance" },
-  { src: feedback11, alt: "Josh testimonial about Patrick training his son Phill during pandemic" },
-  { src: feedback12, alt: "Jess testimonial about Patrick mentoring Connor" },
-  { src: feedback13, alt: "Thelma testimonial about Jonas transformation in Norwegian" },
 ];
 
 export const SocialProof = () => {
