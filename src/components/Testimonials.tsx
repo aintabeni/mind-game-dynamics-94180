@@ -5,6 +5,7 @@ import { CircularTestimonials } from "@/components/ui/circular-testimonials";
 import ahmedImage from "@/assets/ahmed-ibrahim.png";
 import henrikImage from "@/assets/henrik-hatlen.jpg";
 import marianneImage from "@/assets/marianne-son.jpg";
+import eliasImage from "@/assets/elias-training.png";
 
 const testimonials = [
   {
@@ -24,6 +25,12 @@ const testimonials = [
     name: "Marianne",
     designation: "Parent",
     src: marianneImage,
+  },
+  {
+    quote: "The scanning drills completely changed how I read the game. I see passes before they happen now.",
+    name: "Elias",
+    designation: "Academy Player",
+    src: eliasImage,
   },
 ];
 
