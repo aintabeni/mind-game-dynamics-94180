@@ -1,5 +1,8 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { ChevronDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 import feedback1 from "@/assets/feedback-1.jpg";
 import feedback2 from "@/assets/feedback-2.jpg";
@@ -35,11 +38,16 @@ const feedbackImages = [
   { src: feedback10, alt: "Coach feedback on excellent game performance" },
 ];
 
+const INITIAL_COUNT = 6;
+
 export const SocialProof = () => {
+  const [showAll, setShowAll] = useState(false);
   const [ref, inView] = useInView({
     threshold: 0.1,
     triggerOnce: true,
   });
+
+  const visibleImages = showAll ? feedbackImages : feedbackImages.slice(0, INITIAL_COUNT);
 
   return (
     <section ref={ref} className="py-24 px-6 bg-background">
@@ -68,7 +76,7 @@ export const SocialProof = () => {
         </motion.p>
 
         <div className="columns-1 min-[640px]:columns-3 gap-4 space-y-4">
-          {feedbackImages.map((image, index) => (
+          {visibleImages.map((image, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
@@ -85,6 +93,25 @@ export const SocialProof = () => {
             </motion.div>
           ))}
         </div>
+
+        {!showAll && feedbackImages.length > INITIAL_COUNT && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={inView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.5, delay: 0.8 }}
+            className="flex justify-center mt-12"
+          >
+            <Button
+              variant="outline"
+              size="lg"
+              onClick={() => setShowAll(true)}
+              className="group"
+            >
+              Load More
+              <ChevronDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
+            </Button>
+          </motion.div>
+        )}
       </motion.div>
     </section>
   );
