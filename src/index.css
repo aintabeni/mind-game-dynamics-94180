@@ -69,3 +69,77 @@ All colors MUST be HSL.
     }
   }
 }
+
+/* Circular Testimonials Component */
+.circular-testimonial-container {
+  width: 100%;
+  max-width: 56rem;
+  padding: 2rem;
+}
+
+.circular-testimonial-grid {
+  display: grid;
+  gap: 5rem;
+}
+
+.circular-image-container {
+  position: relative;
+  width: 100%;
+  height: 24rem;
+  perspective: 1000px;
+}
+
+.circular-testimonial-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.circular-testimonial-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.circular-name {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.circular-designation {
+  margin-bottom: 2rem;
+}
+
+.circular-quote {
+  line-height: 1.75;
+}
+
+.circular-arrow-buttons {
+  display: flex;
+  gap: 1.5rem;
+  padding-top: 3rem;
+}
+
+.circular-arrow-button {
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .circular-testimonial-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .circular-arrow-buttons {
+    padding-top: 0;
+  }
+}
