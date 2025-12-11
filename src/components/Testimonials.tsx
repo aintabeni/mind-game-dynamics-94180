@@ -2,19 +2,25 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ButtonColorful } from "@/components/ui/button-colorful";
 import { Card, CardContent } from "@/components/ui/card";
+import ahmedImage from "@/assets/ahmed-ibrahim.png";
+import henrikImage from "@/assets/henrik-hatlen.jpg";
+import marianneImage from "@/assets/marianne-son.jpg";
 
 const testimonials = [
   {
     quote: "PB Coaching helped me to think faster on the pitch.",
     author: "Ahmed Ibrahim",
+    image: ahmedImage,
   },
   {
     quote: "PB Coaching improved my performance instantly.",
     author: "Henrik Hatlen Osen, Professional Player",
+    image: henrikImage,
   },
   {
     quote: "PB Coaching developed the winning mindset and decision making that changed my son's game.",
     author: "Marianne",
+    image: marianneImage,
   },
 ];
 
@@ -56,7 +62,14 @@ export const Testimonials = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.25 + index * 0.15 }}
             >
-              <Card className="h-full bg-card border-accent/20 hover:border-accent transition-colors duration-300">
+              <Card className="h-full bg-card border-accent/20 hover:border-accent transition-colors duration-300 overflow-hidden">
+                <div className="aspect-square overflow-hidden">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.author}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <CardContent className="p-6">
                   <p className="text-lg text-foreground mb-4 italic">"{testimonial.quote}"</p>
                   <p className="text-accent font-semibold">— {testimonial.author}</p>
