@@ -57,7 +57,7 @@ export const SocialProof = () => {
           Real messages from players, parents, and coaches about their experience with PB Coaching
         </motion.p>
 
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+        <div className="columns-1 min-[640px]:columns-3 gap-4 space-y-4">
           {feedbackImages.map((image, index) => (
             <motion.div
               key={index}
