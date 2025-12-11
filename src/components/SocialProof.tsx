@@ -14,15 +14,19 @@ import feedback10 from "@/assets/feedback-10.jpg";
 import feedback11 from "@/assets/feedback-11.jpg";
 import feedback12 from "@/assets/feedback-12.jpg";
 import feedback13 from "@/assets/feedback-13.jpg";
+import feedback14 from "@/assets/feedback-14.png";
+import feedback15 from "@/assets/feedback-15.png";
 
 const feedbackImages = [
   { src: feedback11, alt: "Josh testimonial about Patrick training his son Phill during pandemic" },
   { src: feedback1, alt: "Player feedback about decision making improvement" },
   { src: feedback2, alt: "Player celebrating success from training sessions" },
+  { src: feedback14, alt: "Tournament win celebration with 3 games won" },
   { src: feedback3, alt: "Parent feedback about player performance" },
   { src: feedback12, alt: "Jess testimonial about Patrick mentoring Connor" },
   { src: feedback4, alt: "Coach feedback about player debut" },
   { src: feedback5, alt: "Feedback about content quality" },
+  { src: feedback15, alt: "Narhan Roberts sharing goal scored in recent match" },
   { src: feedback6, alt: "Parent sharing match performance stats" },
   { src: feedback13, alt: "Thelma testimonial about Jonas transformation in Norwegian" },
   { src: feedback7, alt: "Match performance update with goals scored" },
