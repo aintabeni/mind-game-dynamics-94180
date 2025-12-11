@@ -20,17 +20,17 @@ import feedback15 from "@/assets/feedback-15.png";
 const feedbackImages = [
   { src: feedback11, alt: "Josh testimonial about Patrick training his son Phill during pandemic" },
   { src: feedback1, alt: "Player feedback about decision making improvement" },
-  { src: feedback2, alt: "Player celebrating success from training sessions" },
-  { src: feedback14, alt: "Tournament win celebration with 3 games won" },
-  { src: feedback3, alt: "Parent feedback about player performance" },
-  { src: feedback12, alt: "Jess testimonial about Patrick mentoring Connor" },
   { src: feedback4, alt: "Coach feedback about player debut" },
+  { src: feedback12, alt: "Jess testimonial about Patrick mentoring Connor" },
+  { src: feedback2, alt: "Player celebrating success from training sessions" },
   { src: feedback5, alt: "Feedback about content quality" },
-  { src: feedback15, alt: "Narhan Roberts sharing goal scored in recent match" },
-  { src: feedback6, alt: "Parent sharing match performance stats" },
   { src: feedback13, alt: "Thelma testimonial about Jonas transformation in Norwegian" },
+  { src: feedback3, alt: "Parent feedback about player performance" },
+  { src: feedback6, alt: "Parent sharing match performance stats" },
+  { src: feedback14, alt: "Tournament win celebration with 3 games won" },
   { src: feedback7, alt: "Match performance update with goals scored" },
   { src: feedback8, alt: "Comeback performance with 8 goals" },
+  { src: feedback15, alt: "Narhan Roberts sharing goal scored in recent match" },
   { src: feedback9, alt: "Henrik Hatlen Osen professional player testimonial" },
   { src: feedback10, alt: "Coach feedback on excellent game performance" },
 ];
@@ -74,12 +74,12 @@ export const SocialProof = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 * index }}
-              className="break-inside-avoid"
+              className="break-inside-avoid overflow-hidden rounded-xl"
             >
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="w-full rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                 loading="lazy"
               />
             </motion.div>
