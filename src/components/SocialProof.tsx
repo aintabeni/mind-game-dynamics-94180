@@ -19,6 +19,12 @@ import feedback12 from "@/assets/feedback-12.jpg";
 import feedback13 from "@/assets/feedback-13.jpg";
 import feedback14 from "@/assets/feedback-14.png";
 import feedback15 from "@/assets/feedback-15.png";
+import feedback16 from "@/assets/feedback-16.jpg";
+import feedback17 from "@/assets/feedback-17.jpg";
+import feedback18 from "@/assets/feedback-18.jpg";
+import feedback19 from "@/assets/feedback-19.jpg";
+import feedback20 from "@/assets/feedback-20.jpg";
+import feedback21 from "@/assets/feedback-21.jpg";
 
 
 const feedbackImages = [
@@ -37,7 +43,12 @@ const feedbackImages = [
   { src: feedback15, alt: "Narhan Roberts sharing goal scored in recent match" },
   { src: feedback9, alt: "Henrik Hatlen Osen professional player testimonial" },
   { src: feedback10, alt: "Coach feedback on excellent game performance" },
-  
+  { src: feedback16, alt: "Parent thanking Patrick - Daris had lots of fun and looking forward to next session" },
+  { src: feedback17, alt: "5-star review from Gentina - very satisfied with Patrick's teaching" },
+  { src: feedback18, alt: "Parent feedback - son training with first team, coach noticed improvement in one month" },
+  { src: feedback19, alt: "Parent thanking Patrick - Henjek also very satisfied" },
+  { src: feedback20, alt: "Parent feedback - Leonek loved yesterday's training and wants to schedule more" },
+  { src: feedback21, alt: "Parent feedback - Leon keeps asking for more training sessions" },
 ];
 
 const INITIAL_COUNT = 6;
