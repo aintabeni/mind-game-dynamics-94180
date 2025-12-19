@@ -28,9 +28,9 @@ const testimonials = [
     src: henrikImage,
   },
   {
-    quote: "My son went from being hesitant on the ball to confident and decisive. The mental training was a game-changer for his development.",
-    name: "King",
-    designation: "Parent",
+    quote: "The training helped me understand the game at a deeper level. I now anticipate plays and make smarter decisions.",
+    name: "Erik-Aksel",
+    designation: "Youth Player",
     src: erikAkselImage,
   },
   {
