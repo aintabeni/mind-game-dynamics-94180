@@ -19,8 +19,6 @@ import feedback12 from "@/assets/feedback-12.jpg";
 import feedback13 from "@/assets/feedback-13.jpg";
 import feedback14 from "@/assets/feedback-14.png";
 import feedback15 from "@/assets/feedback-15.png";
-import feedbackElias from "@/assets/feedback-elias.png";
-
 const feedbackImages = [
   { src: feedback11, alt: "Josh testimonial about Patrick training his son Phill during pandemic" },
   { src: feedback1, alt: "Player feedback about decision making improvement" },
@@ -37,7 +35,6 @@ const feedbackImages = [
   { src: feedback15, alt: "Narhan Roberts sharing goal scored in recent match" },
   { src: feedback9, alt: "Henrik Hatlen Osen professional player testimonial" },
   { src: feedback10, alt: "Coach feedback on excellent game performance" },
-  { src: feedbackElias, alt: "Elias training session - developing elite scanning and decision-making skills on the pitch" },
 ];
 
 const INITIAL_COUNT = 6;
