@@ -14,6 +14,27 @@ import anmarImage from "@/assets/anmar.png";
 import phillipImage from "@/assets/phillip.png";
 import muhammedImage from "@/assets/muhammed.png";
 
+// Feedback screenshots
+import feedbackGentina from "@/assets/feedback-gentina.jpg";
+import feedbackMsg1 from "@/assets/feedback-msg-1.jpg";
+import feedbackMsg2 from "@/assets/feedback-msg-2.jpg";
+import feedbackMsg3 from "@/assets/feedback-msg-3.jpg";
+import feedbackMsg4 from "@/assets/feedback-msg-4.jpg";
+import feedbackMsg5 from "@/assets/feedback-msg-5.jpg";
+import feedbackMsg6 from "@/assets/feedback-msg-6.jpg";
+import feedbackMsg7 from "@/assets/feedback-msg-7.png";
+
+const feedbackScreenshots = [
+  feedbackGentina,
+  feedbackMsg1,
+  feedbackMsg2,
+  feedbackMsg3,
+  feedbackMsg4,
+  feedbackMsg5,
+  feedbackMsg6,
+  feedbackMsg7,
+];
+
 const testimonials = [
   {
     quote: "PB Coaching helped me to think faster on the pitch.",
@@ -133,10 +154,39 @@ export const Testimonials = () => {
           />
         </div>
 
+        {/* Feedback Screenshots Grid */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="mt-16 mb-12"
+        >
+          <h3 className="text-2xl md:text-3xl font-semibold text-center mb-8 text-muted-foreground">
+            Messages from Parents & Players
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {feedbackScreenshots.map((screenshot, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={inView ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.4, delay: 0.6 + index * 0.1 }}
+                className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
+                <img
+                  src={screenshot}
+                  alt={`Feedback message ${index + 1}`}
+                  className="w-full h-auto object-cover"
+                />
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={inView ? { opacity: 1, scale: 1 } : {}}
-          transition={{ duration: 0.5, delay: 0.8 }}
+          transition={{ duration: 0.5, delay: 1.2 }}
           className="text-center"
         >
           <ButtonColorful
